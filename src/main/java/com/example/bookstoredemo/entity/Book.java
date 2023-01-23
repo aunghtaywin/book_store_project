@@ -22,6 +22,7 @@ public class Book extends IdClass{
     private double price;
     private int quantity;
     private String genre;
+    private String imgUrl;
     private String description;
     @ManyToOne
     private Category category;

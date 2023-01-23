@@ -3,6 +3,8 @@ package com.example.bookstoredemo.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,6 +16,8 @@ import java.util.List;
 @Entity
 public class Category extends IdClass{
     @Column(name = "category_name")
+    @NotBlank(message = "Name cannot be blank.")
+    @NotEmpty(message = "Name cannot be empty.")
     private String categoryName;
 
     @OneToMany(mappedBy = "category")
