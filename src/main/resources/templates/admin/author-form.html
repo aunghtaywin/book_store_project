@@ -37,12 +37,12 @@
                                  <small th:if="${#fields.hasErrors('address.streetName')}" th:errors="*{address.streetName}"></small>
                              </div>
                              <div class="form-group">
-                                 <label for="phoneNumber">Street Name</label>
+                                 <label for="phoneNumber">Phone Number</label>
                                  <input type="text" name="phoneNumber" id="phoneNumber" th:classappend="${#fields.hasErrors('address.phoneNumber')} ? 'is-invalid'" class="form-control" th:field="*{address.phoneNumber}">
                                  <small th:if="${#fields.hasErrors('address.phoneNumber')}" th:errors="*{address.phoneNumber}"></small>
                              </div>
                              <div class="form-group">
-                                 <label for="country">Street Name</label>
+                                 <label for="country">Country</label>
                                  <input type="text" name="country" id="country" th:classappend="${#fields.hasErrors('address.country')} ? 'is-invalid'" class="form-control" th:field="*{address.country}">
                                  <small th:if="${#fields.hasErrors('address.country')}" th:errors="*{address.country}"></small>
                              </div>
